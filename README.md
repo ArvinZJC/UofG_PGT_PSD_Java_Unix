@@ -6,4 +6,4 @@ This repository contains Java code written for practising the knowledge gained f
 
 ## ATTENTION
 
-1. TODO
+1. By 3 February 2021, every looks good with Visual Studio Code 1.52.1 + Java 15.0.2.
