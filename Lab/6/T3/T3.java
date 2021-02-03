@@ -1,10 +1,10 @@
 /*
  * @Description: Task 3
- * @Version: 1.0.1.20210203
+ * @Version: 1.0.2.20210203
  * @Author: Arvin Zhao
  * @Date: 2021-02-02 22:44:34
  * @Last Editors: Arvin Zhao
- * @LastEditTime: 2021-02-03 10:17:34
+ * @LastEditTime: 2021-02-03 22:36:39
  */
 
 class T3
@@ -14,7 +14,7 @@ class T3
      * @param str a given parameter
      * @return the score
      */
-    static int computeScore(String str)
+    private static int computeScore(String str)
     {
         int total = 0;
         str = str.toLowerCase();

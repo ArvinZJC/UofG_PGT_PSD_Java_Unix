@@ -1,10 +1,10 @@
 /*
  * @Description: Task 4
- * @Version: 1.0.1.20210203
+ * @Version: 1.0.2.20210203
  * @Author: Arvin Zhao
  * @Date: 2021-02-02 22:56:33
  * @Last Editors: Arvin Zhao
- * @LastEditTime: 2021-02-03 10:04:18
+ * @LastEditTime: 2021-02-03 22:11:09
  */
 
 import java.util.Arrays;
@@ -23,7 +23,7 @@ class Monster
      * @param attackPoints a number of attack points
      * @param weaknesses list of weaknesses
      */
-    public Monster(String type, int hitPoints, int attackPoints, String[] weaknesses)
+    Monster(String type, int hitPoints, int attackPoints, String[] weaknesses)
     {
         this.type = type;
         this.hitPoints = hitPoints;
@@ -35,26 +35,26 @@ class Monster
      * Get the monster's hit points.
      * @return the monster's hit points.
      */
-    public int getHitPoints() { return hitPoints; }
+    int getHitPoints() { return hitPoints; }
 
     /**
      * Get the monster's attack points.
      * @return the monster's attack points.
      */
-    public int getAttackPoints() { return attackPoints; }
+    int getAttackPoints() { return attackPoints; }
 
     /**
      * Get the monster's type.
      * @return the monster's type.
      */
-    public String getType() { return this.type; }
+    String getType() { return this.type; }
 
     /**
      * The current monster attacks the other monster.
      * @param otherMonster the object representing the other monster
      * @return a {@code boolean} indicating the result
      */
-    public boolean attack(Monster otherMonster)
+    boolean attack(Monster otherMonster)
     {
         // A monster cannot attack itself.
         if (otherMonster == this)

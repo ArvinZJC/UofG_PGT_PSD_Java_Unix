@@ -1,10 +1,10 @@
 /*
  * @Description: Problems 2 & 3
- * @Version: 1.0.1.20210203
+ * @Version: 1.0.2.20210203
  * @Author: Arvin Zhao
  * @Date: 2021-02-02 01:39:39
  * @Last Editors: Arvin Zhao
- * @LastEditTime: 2021-02-03 09:28:28
+ * @LastEditTime: 2021-02-03 22:13:05
  */
 
 class Employee
@@ -26,7 +26,7 @@ class Employee
      * @param contractedHours the employee's contracted hours
      * @throws IllegalArgumentException the employee's hourly rate/actual working hours/contracted hours is invalid
      */
-    public Employee(String givenName, String familyName, int employeeNum, double hourlyRate, int actualHours, int contractedHours) throws IllegalArgumentException
+    Employee(String givenName, String familyName, int employeeNum, double hourlyRate, int actualHours, int contractedHours) throws IllegalArgumentException
     {
         this.givenName = givenName;
         this.familyName = familyName;
@@ -54,7 +54,7 @@ class Employee
      * Print some basic info of an employee.
      * @return some basic info of an employee
      */
-    public String printInfo()
+    String printInfo()
     {
         return "Employee info: " + givenName + ' ' + familyName + " (No. " + employeeNum + ")";
     } // end method printInfo
@@ -63,7 +63,7 @@ class Employee
      * Compute the employee's pay for the current month.
      * @return the employee's pay for the current month
      */
-    public double computePay()
+    double computePay()
     {
         double extraHours = Math.max(actualHours - contractedHours, 0);
         double regularHours = Math.min(contractedHours, actualHours);

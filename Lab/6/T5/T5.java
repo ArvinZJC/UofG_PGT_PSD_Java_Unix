@@ -1,10 +1,10 @@
 /*
  * @Description: Task 5
- * @Version: 1.0.0.20210203
+ * @Version: 1.0.1.20210203
  * @Author: Arvin Zhao
  * @Date: 2021-02-03 08:21:08
  * @Last Editors: Arvin Zhao
- * @LastEditTime: 2021-02-03 10:17:15
+ * @LastEditTime: 2021-02-03 22:12:24
  */
 
 import java.util.Arrays;
@@ -35,26 +35,26 @@ abstract class Monster
      * Get the monster's hit points.
      * @return the monster's hit points.
      */
-    public int getHitPoints() { return hitPoints; }
+    int getHitPoints() { return hitPoints; }
 
     /**
      * Get the monster's attack points.
      * @return the monster's attack points.
      */
-    public int getAttackPoints() { return attackPoints; }
+    int getAttackPoints() { return attackPoints; }
 
     /**
      * Get the monster's type.
      * @return the monster's type.
      */
-    public String getType() { return this.type; }
+    String getType() { return this.type; }
 
     /**
      * The current monster attacks the other monster.
      * @param otherMonster the object representing the other monster
      * @return a {@code boolean} indicating the result
      */
-    public boolean attack(Monster otherMonster)
+    boolean attack(Monster otherMonster)
     {
         // A monster cannot attack itself.
         if (otherMonster == this)
@@ -125,7 +125,7 @@ class WaterMonster extends Monster
      * @param hitPoints a number of hit points
      * @param attackPoints a number of attack points
      */
-    public WaterMonster(int hitPoints, int attackPoints)
+    WaterMonster(int hitPoints, int attackPoints)
     {
         super("Water", hitPoints, attackPoints, new String[] { "Fire", "Electric" });
     } // end constructor
@@ -146,7 +146,7 @@ class FireMonster extends Monster
      * @param hitPoints a number of hit points
      * @param attackPoints a number of attack points
      */
-    public FireMonster(int hitPoints, int attackPoints)
+    FireMonster(int hitPoints, int attackPoints)
     {
         super("Fire", hitPoints, attackPoints, new String[] { "Water" });
     } // end constructor
@@ -166,7 +166,7 @@ class ElectricMonster extends Monster
      * @param hitPoints a number of hit points
      * @param attackPoints a number of attack points
      */
-    public ElectricMonster(int hitPoints, int attackPoints)
+    ElectricMonster(int hitPoints, int attackPoints)
     {
         super("Electric", hitPoints, attackPoints, new String[0]);
     } // end constructor
