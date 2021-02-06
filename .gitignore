@@ -23,3 +23,71 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# JetBrains: user-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# JetBrains: generated files
+.idea/**/contentModel.xml
+
+# JetBrains: sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# JetBrains: Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# JetBrains: Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.
+.idea/artifacts
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+*.iml
+*.ipr
+
+# JetBrains: CMake
+cmake-build-*/
+
+# JetBrains: Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# JetBrains: file-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# JetBrains: mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JetBrains: JIRA plugin
+atlassian-ide-plugin.xml
+
+# JetBrains: Cursive Clojure plugin
+.idea/replstate.xml
+
+# JetBrains: Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# JetBrains: editor-based Rest Client
+.idea/httpRequests
+
+# JetBrains: Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
