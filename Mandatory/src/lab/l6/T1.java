@@ -12,7 +12,7 @@ package lab.l6;
 class T1
 {
     /**
-     * Compute and print the list of prime numbers less than a given paramter.
+     * Compute and print the list of prime numbers less than a given parameter.
      * @param max a given parameter
      */
     private static void printPrimes(@SuppressWarnings("SameParameterValue") int max)

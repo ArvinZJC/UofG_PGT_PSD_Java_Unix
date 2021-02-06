@@ -11,7 +11,6 @@ package tapp.t7.p3;
 
 interface Figure
 {
-    // An interface's methods are all public.
     double calculatePerimeter();
     double calculateArea();
 } // end interface Figure
