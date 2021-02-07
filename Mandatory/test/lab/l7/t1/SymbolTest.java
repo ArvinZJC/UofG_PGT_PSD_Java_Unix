@@ -1,10 +1,10 @@
 /*
  * @Description: a part of Task 3
- * @Version: 1.0.0.20210206
+ * @Version: 1.0.1.20210207
  * @Author: Arvin Zhao
  * @Date: 2021-02-06 22:39:13
  * @Last Editors: Arvin Zhao
- * @LastEditTime: 2021-02-06 23:47:01
+ * @LastEditTime: 2021-02-07 23:47:01
  */
 
 package lab.l7.t1;
@@ -15,13 +15,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SymbolTest
 {
+    /**
+     * Test the results of rock.
+     */
     @Test
     void rockTest()
     {
         assertEquals(GameResult.WIN, Symbol.ROCK.getResult(Symbol.SCISSORS), "Rock should beat scissors.");
-        assertEquals( GameResult.LOSE, Symbol.ROCK.getResult(Symbol.PAPER), "Rock should lose to paper.");
+        assertEquals(GameResult.LOSE, Symbol.ROCK.getResult(Symbol.PAPER), "Rock should lose to paper.");
     } // end method rockTest
 
+    /**
+     * Test the results of paper.
+     */
     @Test
     void paperTest()
     {
@@ -29,6 +35,9 @@ class SymbolTest
         assertEquals(GameResult.LOSE, Symbol.PAPER.getResult(Symbol.SCISSORS), "Paper should lose to scissors.");
     } // end method paperTest
 
+    /**
+     * Test the results of scissors.
+     */
     @Test
     void scissorsTest()
     {
@@ -36,6 +45,9 @@ class SymbolTest
         assertEquals(GameResult.LOSE, Symbol.SCISSORS.getResult(Symbol.ROCK), "Scissors should lose to rock.");
     } // end method scissorsTest
 
+    /**
+     * Test if the result "drawing" works as expected.
+     */
     @Test
     void equalTest()
     {

@@ -23,18 +23,27 @@ class BinTest
 {
     private List<Integer> nums;
 
+    /**
+     * Initialise the test set before each test.
+     */
     @BeforeEach
     void setUp()
     {
         nums = Arrays.asList(75, 50, 20, 60, 40, 50);
     } // end method setUp
 
+    /**
+     * Drop the test set after each test.
+     */
     @AfterEach
     void tearDown()
     {
         nums = null;
     } // end method tearDown
 
+    /**
+     * Test if the method {@code getSpace()} of the class {@code Bin} works as expected.
+     */
     @Test
     void getSpaceTest()
     {
@@ -45,14 +54,20 @@ class BinTest
         assertEquals(70, b1.getSpace(), "Bin.getSpace() should return correct remaining space after store().");
     } // end method getSpaceTest
 
+    /**
+     * Test if the method {@code store()} of the class {@code Bin} works as expected.
+     */
     @Test
     void storeTest()
     {
         Bin b1 = new Bin(100);
         b1.store(60);
-        assertThrows(IllegalArgumentException.class, () -> b1.store(60));
+        assertThrows(IllegalArgumentException.class, () -> b1.store(60), "Bin.store() should raise exception when space is insufficient.");
     } // end method storeTest
 
+    /**
+     * Test if the best fit strategy works as expected.
+     */
     @Test
     void bestFitStrategyTest()
     {
@@ -69,6 +84,9 @@ class BinTest
         assertEquals(5, totalSpace, "Total remaining space should be 5 on test set.");
     } // end method bestFitStrategyTest
 
+    /**
+     * Test if the first fit strategy works as expected.
+     */
     @Test
     void firstFitStrategyTest()
     {
@@ -85,6 +103,9 @@ class BinTest
         assertEquals(105, totalSpace, "Total remaining space should be 105 on test set.");
     } // end method firstFitStrategyTest
 
+    /**
+     * Test if the next fit strategy works as expected.
+     */
     @Test
     void nextFitStrategyTest()
     {
