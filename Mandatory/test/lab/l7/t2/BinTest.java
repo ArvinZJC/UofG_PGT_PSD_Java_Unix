@@ -1,21 +1,21 @@
 /*
  * @Description: a part of Task 3
- * @Version: 1.0.0.20210206
+ * @Version: 1.0.1.20210207
  * @Author: Arvin Zhao
  * @Date: 2021-02-06 23:03:41
  * @Last Editors: Arvin Zhao
- * @LastEditTime: 2021-02-06 23:47:18
+ * @LastEditTime: 2021-02-07 23:47:18
  */
 
 package lab.l7.t2;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -82,7 +82,7 @@ class BinTest
             assertTrue(space >= 0, "Bins should have non-negative space left.");
         } // end for
 
-        assertEquals(5, totalSpace, "Total remaining space should be 5 on test set.");
+        assertEquals(105, totalSpace, "Total remaining space should be 105 on test set.");
     } // end method firstFitStrategyTest
 
     @Test
@@ -95,10 +95,9 @@ class BinTest
         {
             int space = b.getSpace();
             totalSpace += space;
-
             assertTrue(space >= 0, "Bins should have non-negative space left.");
         } // end for
 
-        assertEquals(105, totalSpace, "Total remaining space should be 5 on test set.");
+        assertEquals(105, totalSpace, "Total remaining space should be 105 on test set.");
     } // end method nextFitStrategyTest
 } // end class BinTest
