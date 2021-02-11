@@ -1,6 +1,6 @@
 /*
  * @Description: Task 1
- * @Version: 1.0.0.20210211
+ * @Version: 1.0.1.20210211
  * @Author: Arvin Zhao
  * @Date: 2021-02-11 10:57:34
  * @Last Editors: Arvin Zhao
@@ -49,9 +49,8 @@ class WordCounter
         String longestWord = "";
 
         for (String word : words)
-            if (word.toLowerCase().charAt(0) == c)
-                if (word.length() > longestWord.length())
-                    longestWord = word;
+            if (word.toLowerCase().charAt(0) == c && word.length() > longestWord.length())
+                longestWord = word;
 
         longestWords.put(c, longestWord);
         return longestWord;
