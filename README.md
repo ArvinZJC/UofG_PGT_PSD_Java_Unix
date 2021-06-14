@@ -7,4 +7,4 @@ This repository contains Java and Bash script code written for practising the kn
 
 ## ATTENTION
 
-1. By 25 March 2021, every looks good with IntelliJ IDEA 2020.2.3 + Java 15.0.2 (for the Java part) and Ubuntu 20.10 (for the Bash script part).
+1. By 14 June 2021, every looks good with IntelliJ IDEA 2021.1.2 + Java 15.0.2 (for the Java part) and Ubuntu 20.10 (for the Bash script part).
